@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Steam Tools - Accédez à tous vos jeux de rêve sans bannissement</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e0e6f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #61dafb;
+    letter-spacing: 3px;
+    animation: fadeInDown 1.2s ease forwards;
+  }
+
+  header p {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    color: #b0c7d9;
+    animation: fadeInUp 1.2s ease forwards;
+  }
+
+  main {
+    flex-grow: 1;
+    max-width: 1100px;
+    margin: 3rem auto 4rem;
+    padding: 0 1rem;
+  }
+
+  section.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+  }
+
+  .feature-card {
+    background: rgba(255 255 255 / 0.07);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #61dafb33;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  .feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 40px #61dafb99;
+  }
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1.2rem;
+    filter: drop-shadow(0 0 5px #61dafbaa);
+    transition: transform 0.3s ease;
+  }
+  .feature-card:hover .feature-icon {
+    transform: scale(1.2);
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #a7d8ff;
+    margin-bottom: 0.8rem;
+  }
+
+  .feature-desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #d3e0f0cc;
+  }
+
+  .cta-section {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #61dafb;
+    margin-bottom: 1rem;
+  }
+
+  .cta-desc {
+    font-size: 1.1rem;
+    color: #b0c7d9;
+    margin-bottom: 2rem;
+  }
+
+  .btn-download {
+    background: #61dafb;
+    color: #0f2027;
+    font-weight: 700;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 20px #61dafbaa;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+  }
+  .btn-download:hover {
+    background: #52c0f0;
+    box-shadow: 0 12px 30px #52c0f0cc;
+  }
+
+  footer {
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    color: #7f9bb3;
+    user-select: none;
+  }
+
+  /* Animations */
+  @keyframes fadeInDown {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  @keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.4rem;
+    }
+    .feature-card {
+      padding: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Steam Tools</h1>
+  <p>Accédez à tous vos jeux Steam sans bannissement.</p>
+</header>
+
+<main>
+  <section class="features" aria-label="Fonctionnalités principales">
+    <article class="feature-card" tabindex="0">
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833524.png" alt="Accès complet" class="feature-icon" />
+      <h2 class="feature-title">Accès complet à tous les jeux</h2>
+      <p class="feature-desc">
+        Profitez de tous les jeux Steam directement sur votre machine, sans restrictions ni limitations de la plateforme.
+      </p>
+    </article>
+
+    <article class="feature-card" tabindex="0">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Sécurité" class="feature-icon" />
+      <h2 class="feature-title">Sans risque de bannissement</h2>
+      <p class="feature-desc">
+        Vos jeux sont installés et lancés localement, ce qui élimine tout risque d’être banni par Steam ou les serveurs en ligne.
+      </p>
+    </article>
+
+    <article class="feature-card" tabindex="0">
+      <img src="https://cdn-icons-png.flaticon.com/512/883/883407.png" alt="Offline uniquement" class="feature-icon" />
+      <h2 class="feature-title">Fonctionne uniquement en mode offline</h2>
+      <p class="feature-desc">
+        Les jeux en ligne ne fonctionnent pas, car la connexion aux serveurs officiels est désactivée pour garantir votre sécurité.
+      </p>
+    </article>
+  </section>
+
+  <section class="cta-section" aria-label="Appel à l'action">
+    <h2 class="cta-title">Téléchargez Steam Tools dès maintenant</h2>
+    <p class="cta-desc">Profitez de toute votre bibliothèque en local, sans compromis.</p>
+    <a href="https://gofile.io/d/PczfL7" target="_blank" class="btn-download" rel="noopener noreferrer">
+      Télécharger Steam Tools
+    </a>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Steam Tools. Tous droits réservés.
+</footer>
+
+</body>
+</html>
